@@ -1,0 +1,41 @@
+{
+    "fileName": "id_1766524713131_1897_propertyChange",
+    "fileType": "change",
+    "changeType": "propertyChange",
+    "moduleName": "",
+    "reference": "fiorielementsv2",
+    "packageName": "",
+    "content": {
+        "property": "includeItemInSelection",
+        "newValue": false
+    },
+    "selector": {
+        "id": "fiorielementsv2::sap.suite.ui.generic.template.ObjectPage.view.Details::Products--ProductsComments::responsiveTable",
+        "idIsLocal": false,
+        "type": "sap.m.Table"
+    },
+    "layer": "CUSTOMER_BASE",
+    "texts": {},
+    "namespace": "apps/fiorielementsv2/changes/",
+    "projectId": "",
+    "creation": 1766524713131,
+    "originalLanguage": "",
+    "support": {
+        "generator": "changeUtils: SAPFioriTools",
+        "service": "",
+        "user": "",
+        "sapui5Version": "1.143.2",
+        "sourceChangeFileName": "",
+        "compositeCommand": ""
+    },
+    "oDataInformation": {},
+    "dependentSelector": {},
+    "validAppVersions": {
+        "from": "0.0.1",
+        "to": "0.0.1",
+        "creation": "0.0.1"
+    },
+    "jsOnly": false,
+    "variantReference": "",
+    "appDescriptorChange": false
+}
