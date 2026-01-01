@@ -1,0 +1,11 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:smartfilterbar="sap.ui.comp.smartfilterbar"
+    xmlns:core="sap.ui.core">
+
+    <smartfilterbar:ControlConfiguration key="CustomFloorAreaFilter" label="Floor area above 1000" visibleInAdvancedArea="true" groupId="_BASIC">
+        <smartfilterbar:customControl>
+            <CheckBox id="idFloorAreaCheckBox" select="onCheckBoxSelect" />
+        </smartfilterbar:customControl>
+    </smartfilterbar:ControlConfiguration>
+
+</core:FragmentDefinition>

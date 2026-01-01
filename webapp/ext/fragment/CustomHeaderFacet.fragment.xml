@@ -1,0 +1,13 @@
+<c:FragmentDefinition xmlns="sap.m"
+    xmlns:c="sap.ui.core"
+    xmlns:layout="sap.ui.layout">
+    <layout:VerticalLayout >
+        <Label text="CustomEmail"/>
+        <Text text="{Email}"/>
+    </layout:VerticalLayout>
+
+    <layout:VerticalLayout >
+        <Label text="Status"/>
+        <Text text="OK"/>
+    </layout:VerticalLayout>
+</c:FragmentDefinition>

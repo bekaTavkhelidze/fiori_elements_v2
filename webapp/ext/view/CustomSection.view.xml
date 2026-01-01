@@ -1,0 +1,32 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m"
+	xmlns:layout="sap.ui.layout"
+	xmlns:forms="sap.ui.layout.form" controllerName="fiorielementsv2.ext.controller.CustomSection">
+
+
+
+	<forms:SimpleForm id="idSimpleForm">
+		<layout:VerticalLayout>
+
+			<Label labelFor="idGeorgiaCountryText" text="Country:"></Label>
+			<Text id="idGeorgiaCountryText" text="Georgia"></Text>
+		</layout:VerticalLayout>
+		<layout:VerticalLayout>
+
+			<Label labelFor="idTbilisiCityText" text="City:"></Label>
+			<Text id="idTbilisiCityText" text="Tbilisi"></Text>
+		</layout:VerticalLayout>
+		<layout:VerticalLayout>
+
+			<Label labelFor="idRustaveliStText" text="Street:"></Label>
+			<Text id="idRustaveliStText" text="Rustaveli st"></Text>
+		</layout:VerticalLayout>
+
+		<layout:VerticalLayout>
+			<Button press="onCallFuncImportButtonPress" text="call Func Import"></Button>
+		</layout:VerticalLayout>
+
+
+	</forms:SimpleForm>
+
+</mvc:View>

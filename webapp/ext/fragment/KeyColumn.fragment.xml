@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+    <Column id="idFioriTools::ColumnExtensionColumn">
+        <Text text="Value" id="idValueText"/>
+        <customData>
+            <core:CustomData key="p13nData" value="\{&quot;columnIndex&quot;: &quot;2&quot;, &quot;columnKey&quot;: &quot;ColumnExtension&quot;}"/>
+        </customData>
+    </Column>
+</core:FragmentDefinition>
