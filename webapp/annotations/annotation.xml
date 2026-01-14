@@ -13,7 +13,48 @@
     </edmx:Reference>
     <edmx:DataServices>
         <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+            <Annotations Target="StoreService.EntityContainer">
+                <Annotation Term="Common.SideEffects" Qualifier="sideEffectAction1">
+                    <Record>
+                        <PropertyValue Property="SourceEntities">
+                            <Collection>
+                                <!-- Absolute path for Unbound Actions in OData V4 -->
+                                <NavigationPropertyPath>StoreService.EntityContainer/mutate</NavigationPropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                        <PropertyValue Property="TargetProperties">
+                            <Collection>
+                                <!-- Specify the path to refresh relative to the UI context -->
+                                <PropertyPath>Products/Name</PropertyPath>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
             <Annotations Target="StoreService.Stores">
+                <Annotation Term="Common.SideEffects" Qualifier="productEditSideEffect">
+
+                    <Record>
+
+                        <!-- <PropertyValue Property="SourceProperties">
+                            <Collection>
+                                <PropertyPath>Name</PropertyPath>
+                            </Collection>
+                        </PropertyValue> -->
+                        <PropertyValue Property="SourceEvents">
+                            <Collection>
+                                <String>StoreService.mutate</String>
+                            </Collection>
+                        </PropertyValue>
+
+                        <PropertyValue Property="TargetProperties">
+                            <Collection>
+                                <String>Products/Name</String>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+
+                </Annotation>
 
                 <Annotation Term="UI.LineItem">
                     <Collection  >
@@ -90,6 +131,18 @@
                     </Record>
 
                 </Annotation>
+                <!-- <Annotation Term="Common.SideEffects" Qualifier='Trigger'>
+                    <Record>
+
+                        <PropertyValue Property="TriggerAction" String="StoreService.EntityContainer/mutate"/>
+                        <PropertyValue Property="TargetProperties">
+                            <Collection>
+                                <String>Products/Name</String>
+                                <String>Products/Photo</String>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation> -->
 
                 <Annotation Term="UI.FieldGroup" Qualifier="GeneratedGroup">
                     <Record Type="UI.FieldGroupType">
@@ -142,6 +195,8 @@
 
             </Annotations>
             <Annotations Target="StoreService.Products">
+
+
                 <Annotation Term="UI.HeaderInfo">
                     <Record Type="UI.HeaderInfoType">
                         <PropertyValue Property="TypeName" String="Store"/>
@@ -297,6 +352,7 @@
                     </Collection>
                 </Annotation>
             </Annotations>
+
         </Schema>
     </edmx:DataServices>
 </edmx:Edmx>

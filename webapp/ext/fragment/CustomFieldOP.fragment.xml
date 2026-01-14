@@ -6,7 +6,7 @@
     <layout:VerticalLayout >
 
         <Label text="Name:"/>
-        <Text text="{Name}"/>
+        <Text text="{Name}" id="idNameText"/>
 
 
         <Label text="Email:"/>
