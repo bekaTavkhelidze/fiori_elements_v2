@@ -16,32 +16,25 @@ server:
         backend:
           - path: /v2
             url: http://localhost:4004
+        bsp: fiorielementsv2
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
         port: 35729
-        path: webapp
+        path: dist
         delay: 300
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
         flp:
           theme: sap_horizon
-    - name: sap-fe-mockserver
-      beforeMiddleware: csp
-      configuration:
-        mountPath: /
-        services:
-          - urlPath: /v2/root
-            metadataPath: ./webapp/localService/mainService/metadata.xml
-            mockdataPath: ./webapp/localService/mainService/data
-            generateMockData: true
-        annotations: []
     - name: fiori-tools-servestatic
-      afterMiddleware: compression
+      beforeMiddleware: fiori-tools-proxy
       configuration:
         paths:
-          - path: /resources/fiorielements
-            src: ..\fiori_elements\webapp
-          - path: /appconfig
-            src: appconfig
+          - path: /**/fiorielementsv2
+            src: dist
+resources:
+  configuration:
+    paths:
+      webapp: dist

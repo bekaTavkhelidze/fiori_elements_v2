@@ -35,10 +35,10 @@
     },
     "crossNavigation": {
       "inbounds": {
-        "intent1": {
+        "fiorielementsV2-show": {
           "semanticObject": "fiorielementsV2",
           "action": "show",
-          "title": "My App Title",
+          "title": "{{fiorielementsV2-show.flpTitle}}",
           "signature": {
             "parameters": {},
             "additionalParameters": "allowed"

@@ -19,7 +19,7 @@
                         <PropertyValue Property="SourceEntities">
                             <Collection>
                                 <!-- Absolute path for Unbound Actions in OData V4 -->
-                                <NavigationPropertyPath>StoreService.EntityContainer/mutate</NavigationPropertyPath>
+                                <NavigationPropertyPath></NavigationPropertyPath>
                             </Collection>
                         </PropertyValue>
                         <PropertyValue Property="TargetProperties">

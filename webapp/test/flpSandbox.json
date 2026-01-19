@@ -1,0 +1,18 @@
+{
+  "applications": {
+    "MyFioriElementV2-display": {
+      "additionalInformation": "SAPUI5.Component=fiorielementsv2",
+      "applicationType": "URL",
+      "url": "/fiorielementsv2",
+      "title": "My Fiori Application",
+      "description": "My first Fiori application"
+    },
+    "MySecondFioriObject-display": {
+      "additionalInformation": "SAPUI5.Component=fiorielements",
+      "applicationType": "URL",
+      "url": "/resources/fiorielements",
+      "title": "My Second Fiori Application",
+      "description": "My second Fiori application"
+    }
+  }
+}
