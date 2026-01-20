@@ -4,7 +4,7 @@
 
     <smartfilterbar:ControlConfiguration key="CustomFloorAreaFilter" label="Floor area above 1000" visibleInAdvancedArea="true" groupId="_BASIC">
         <smartfilterbar:customControl>
-            <CheckBox id="idFloorAreaCheckBox" select="onCheckBoxSelect" />
+            <CheckBox id="idLargeAreaCheckBox" selected="{path: 'filterValues>', formatOptions: { operator: 'fiorielementsv2.ext.controller.ListReport.filterItems' }}"/>
         </smartfilterbar:customControl>
     </smartfilterbar:ControlConfiguration>
 

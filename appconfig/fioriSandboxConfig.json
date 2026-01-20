@@ -3,7 +3,15 @@
     "localfiorielementv4-show": {
       "additionalInformation": "SAPUI5.Component=fiorielements",
       "applicationType": "URL",
-      "url": "../resources/fiorielements"
+      "url": "../resources/fiorielements",
+      "title": "Fiori Elements V4 App",
+      "description": "A Fiori Elements V4 Application"
+    },
+    "google-display": {
+      "applicationType": "URL",
+      "url": "https://www.google.com",
+      "title": "External Link",
+      "description": "Google"
     }
   }
 }
